@@ -1,7 +1,8 @@
-const button = document.getElementById("btn");
+const buttons = document.querySelectorAll(".view-more-btn");
 
-button.addEventListener("click", (event) => {
- event.preventDefault();
- alert("You are gay");
-}
-   );
+buttons.forEach(btn => {
+  btn.addEventListener("click", (event) => {
+    event.preventDefault(); // stops page from reloading for <a>
+    alert("You are gay!");
+  });
+});

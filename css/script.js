@@ -1,3 +1,7 @@
 const btn = document.getElementById("btn");
 
-btn.addEventListener("click", () => alert("You are gay"));
+btn.addEventListener("click", (event) => {
+ event.preventDefault();
+ alert("You are gay");
+}
+   );

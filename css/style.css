@@ -205,76 +205,56 @@ a{
     border-radius: 10px;
 }
 /* projects */
-.project{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
-    background-color:var(--dark-200);
-    border-radius: 7px;
-    padding: 20px 40px;
-    width: 300px;
-    box-shadow: 1px 1px 10px rgba(red, green, blue, alpha);
-
-}
-
-
-
-.project-image img{
-    width: 300px;
-    height: 250px;
-    object-fit: cover;
-}
-.project-info img{
-    width: 300px;
-    height: 250px;
-    object-fit: cover;
-
-}
-.project-info{
-    display: flex;
-    flex-direction: column;
-    gap:10px;
-}
-.project-title{
-    font-size:32px;
-}
-.project-desc{
-    font-size:14px ;
-
-}
-.status{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.view-more-btn {
-    display: inline-block;
-    padding: 10px 25px;          /* size of button */
-    font-size: 16px;
-    font-weight: 550;
-    color: #fff;                 /* text color */
-    background-color:#8c8c8c;   /* blue background */
-    border: none;
-    border-radius: 8px;          /* rounded corners */
-    cursor: pointer;
-    transition: all 0.3s ease;  /* smooth hover */
-    text-decoration: none;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-}
-
-.view-more-btn:hover {
-    background-color: #0f0f10;  /* darker blue on hover */
-    transform: translateY(-2px); /* subtle lift effect */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* shadow on hover */
+#projects{
+  padding: 50px 20px;
+  color:white;
+  text-align:center;
 }
 
 .projects-list{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    row-gap: 20px;
-    place-items: center;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.project{
+  background: color #1b1b1b;
+  border-radius:12px;
+  padding:20px;
+  text-align:left;
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+  border:1px solid transparent;
+}
+
+.project img{
+  width :70%;
+  border-radius:8px;
+  margin-bottom:15px;
+}
+
+.project h2{
+  font-size:20px;
+  margin-bottom:10px;
+}
+.project p {
+  font-size:16px;
+  margin-bottom:15px;
+
+}
+.view-more-btn{
+  background-color: #fff;
+  color:#000;
+  padding:10px 15px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+  transition: 0.3s ease;
+
+}
+.view-more-btn:hover{
+  background-color: #ddd;
 }
 /* contact */
 #contact{

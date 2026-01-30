@@ -34,8 +34,10 @@
     <h1>Hi, I'm <span>Pramod Dhami</span></h1>
     <h3>Computer Engineering Student</h3>
     <p>
-      I’m a passionate Computer Engineering student at IOE Purwanchal Campus,
-      interested in web development, problem solving, and building real-world projects.
+       I’m a passionate <strong>Computer Engineering</strong> student at 
+    <strong>IOE Purwanchal Campus</strong>, interested in 
+    <strong>web development</strong>, <strong>data science</strong>, 
+    <strong>problem solving</strong>, and building <strong>real-world projects</strong>
     </p>
 
     <div class="home-buttons">
@@ -53,7 +55,7 @@
 <section id="projects">
     <div class="header">
         <h1>My Projects</h1>
-        <p>I’m excited to start building web projects and learning more every day.</p>
+        <p>I’m ready to start building web projects and learning more every day.</p>
 
     </div>
     <div class="projects-list">
@@ -75,35 +77,40 @@
 </section>
     <!-- skill section -->
 
-    <section id="skill">
-        <div class="header">
-            <h1>My Skills</h1>
-            <p>
-                Here are some of my skills.
-            </p>
-        </div>
-        <div class="my-skills">
-            <div class="skill">
-                <i class="fa-brands fa-html5" aria-hidden="true"></i>
-                <p>HTML</p>
-            </div>
-            <div class="skill">
-                <i class="fa-brands fa-css3" aria-hidden="true"></i>
-                <p>CSS</p>
-            </div>
-            
-            <div class="skill">
-                <i class="fa-brands fa-js" aria-hidden="true"></i>
-                <p>JS</p>
-            </div>
-            <div class="skill">
-                <i class="fa-brands fa-python" aria-hidden="true"></i>
-                <p>Python</p>
-            </div>
+    <section class="skills">
+  <h2>Skills</h2>
 
-        </div>
+  <div class="skill-card">
+    <div class="skill-header">
+      <span> Programming</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="skill-content">
+      <p>Python, JavaScript, C, C++</p>
+    </div>
+  </div>
 
-    </section>
+  <div class="skill-card">
+    <div class="skill-header">
+      <span> Data Science</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="skill-content">
+      <p>Data Analysis, Statistics, Pandas, NumPy</p>
+    </div>
+  </div>
+
+  <div class="skill-card">
+    <div class="skill-header">
+      <span> Web Development</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="skill-content">
+      <p>HTML, CSS, JavaScript</p>
+    </div>
+  </div>
+</section>
+
     <!-- contact section -->
     <section id="contact">
 
@@ -113,7 +120,7 @@
 
         <div class="contact-form">
             <h1>Contact Me</h1>
-            <form action="save.php" method="post">
+            <form id="contactForm">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name">

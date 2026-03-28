@@ -150,11 +150,11 @@ a {
 }
 
 .btn.outline {
-  border: 1px solid var(--dark-500);
+  border: 1px solid var(--dark-400);
 }
 
 .btn.outline:hover {
-  background-color: var(--dark-300);
+  background-color: var(--dark-200);
 }
 
 /*image styling*/
@@ -229,7 +229,7 @@ a {
 }
 
 .project {
-  background-color: #1b1b1b;
+  background-color: var(--dark-100);
   border-radius: 12px;
   padding: 20px;
   text-align: left;
@@ -276,7 +276,7 @@ a {
 }
 
 .background {
-  background: url(../assets/-515287308.png.jpg);
+  background: var(--dark-200);
   background-size: cover;
   background-position: top;
   filter: brightness(0.5);
